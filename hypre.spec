@@ -21,19 +21,6 @@ BuildRequires:	mpich-devel
 %endif
 %{?with_openmp:BuildRequires:	libgomp-devel}
 BuildRequires:	rpmbuild(macros) >= 1.605
-#BuildRequires:	autoconf
-#BuildRequires:	automake
-#BuildRequires:	intltool
-#BuildRequires:	libtool
-# if using noarch subpackages:
-#BuildRequires:	rpm-build >= 4.6
-#Requires(postun):	-
-#Requires(pre,post):	-
-#Requires(preun):	-
-#Requires:	-
-#Provides:	-
-#Obsoletes:	-
-#Conflicts:	-
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
